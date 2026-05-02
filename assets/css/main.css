@@ -185,7 +185,7 @@ svg {
   top: 0;
   width: 1px;
   height: 100%;
-  background-image: url("/assets/image/divider.svg");
+  background-image: url("./assets/image/divider.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ svg {
       210px
     )
     0 clamp(20px, 20px + (80 - 20) * ((100vw - 320px) / (1024 - 320)), 80px);
-  background-image: url("/assets/image/services-bg.jpg");
+  background-image: url("./assets/image/services-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1157,7 +1157,7 @@ svg {
     top: 0;
     width: 1px;
     height: 100%;
-    background-image: url("/assets/image/divider.svg");
+    background-image: url("./assets/image/divider.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
