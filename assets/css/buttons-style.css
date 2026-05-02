@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/LatoBlack.woff2')format('wff2'),
+        url('../fonts/Lato-Black.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/LatoBold.woff2')format('wff2'),b
+        url('../fonts/Lato-Bold.woff')format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/UbuntuRegular.woff2')format('wff2'),
+        url('../fonts/Ubuntu-Regular.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/UbuntuBold.woff2')format('wff2'),
+        url('../fonts/Ubuntu-Bold.woff')format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --font-lato:'Lato',sans-serif;
+    --font-ubuntu:'Ubuntu',sans-serif;
+    --color-gray:#424551;
+    --color-light:#fff;
+    /* --color-main:#FF5A30; */
+    --color-primary:#FF5A30;
+    --color-primary-hover:#FC3300;
+    --color-storm:#787A80;
+    --color-ebony:#1e212c;
+    --color-light-gray:#9FA0A3;
+    --color-gray-block:#F4F5F6;
+    --grid-gap:30px;
+}
+
+/* ------------ button-large-FILL -------------------------- */
+.button-fill-large{
+    font-family: var(--font-ubuntu);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 40px;
+    transition: all 0.1s ease-in-out;
+}
+.button-fill-large:hover{
+    background-color: var(--color-primary-hover);
+    transition: all 0.3s ease-in-out;
+}
+/* ------------ button-regular-FILL -------------------------- */
+.button-fill-regular{
+    font-family: var(--font-ubuntu);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 32px;
+    transition: all 0.1s ease-in-out;
+}
+.button-fill-regular:hover{
+    background-color: var(--color-primary-hover);
+    transition: all 0.3s ease-in-out;
+}
+/* ------------ button-small-FILL -------------------------- */
+.button-fill-small{
+    font-family: var(--font-ubuntu);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 32px;
+    transition: all 0.1s ease-in-out;
+}
+.button-fill-small:hover{
+    background-color: var(--color-primary-hover);
+    transition: all 0.3s ease-in-out;
+}
+/* ----------------------------------------------------------- */
+/* ------------ button-large-STROKE -------------------------- */
+/* ----------------------------------------------------------- */
+.button-stroke-large{
+    font-family: var(--font-ubuntu);
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 40px;
+    transition: all 0.1s ease-in-out;
+}
+.button-stroke-large:hover{
+    background-color: var(--color-primary);
+    color:var(--color-light);
+    transition: all 0.3s ease-in-out;
+}
+/* ------------ button-regular-STROKE -------------------------- */
+.button-stroke-regular{
+    font-family: var(--font-ubuntu);
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 32px;
+    transition: all 0.1s ease-in-out;
+}
+.button-stroke-regular:hover{
+    background-color: var(--color-primary);
+    color:var(--color-light);
+    transition: all 0.3s ease-in-out;
+}
+/* ------------ button-small-STROKE -------------------------- */
+.button-stroke-small{
+    font-family: var(--font-ubuntu);
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 32px;
+    transition: all 0.1s ease-in-out;
+}
+.button-stroke-small:hover{
+    background-color: var(--color-primary);
+    color:var(--color-light);
+    transition: all 0.3s ease-in-out;
+}
+/* ----------------------------------------------------------- */
+/* ------------ button-large-STROKE-white -------------------------- */
+/* ----------------------------------------------------------- */
+.button-stroke-large-white{
+    font-family: var(--font-ubuntu);
+    background-color: transparent;
+    border: 1px solid var(--color-light);
+    border-radius: 4px;
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 40px;
+    transition: all 0.1s ease-in-out;
+}
+.button-stroke-large-white:hover{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color:var(--color-light);
+    transition: all 0.3s ease-in-out;
+}
+/* -----------------------button-fill-goToTop------------------------------------ */
+.button-fill-goToTop{
+    font-family: var(--font-ubuntu);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 0 0px;
+    transition: all 0.1s ease-in-out;
+}
+.button-fill-goToTop svg{
+    fill: var(--color-light);
+}
+.button-fill-goToTop:hover{
+    background-color: var(--color-primary-hover);
+    transition: all 0.3s ease-in-out;
+}

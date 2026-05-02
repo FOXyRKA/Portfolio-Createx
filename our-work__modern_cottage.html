@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/accordion.css" />
+    <link rel="stylesheet" href="./assets/css/graph-modal.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="top" class="header header__main header_other">
+      <div class="container header_container">
+        <a href="index.html" class="logo header-logo">
+          <svg width="130" height="22">
+            <use xlink:href="./assets/image/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="about-us.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="our-work.html" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="news.html" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Call us</span>
+              <span class="contacts-link__value">(405) 555-0128</span>
+            </div>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Talk to us</span>
+              <span class="contacts-link__value">hello@createx.com</span>
+            </div>
+          </a>
+        </div>
+        <div class="header-contacts--noText">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="nav-burger">
+          <ul class="nav__list-burger">
+            <li class="nav__item-burger">
+              <a href="about-us.html" class="nav__link-burger">About Us</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="services.html" class="nav__link-burger">Services</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="our-work.html" class="nav__link-burger">Work</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="news.html" class="nav__link-burger">News</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="contacts.html" class="nav__link-burger">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- page-hero -->
+    <section
+      class="page-hero page-hero--transparent"
+      style="
+        background-image: url(assets/image/our-work-modern-cottage/bg-image.png);
+      "
+      ;
+    >
+      <div class="container page--container">
+        <ul class="breadcrumbs page-hero__breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a
+              href="index.html"
+              class="breadcrumbs__link breadcrumbs__link-noActive"
+              >Homepage</a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <a
+              href="our-work.html"
+              class="breadcrumbs__link breadcrumbs__link-noActive"
+              >Work</a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link-open"
+              >Modern Cottage</a
+            >
+          </li>
+        </ul>
+        <h1 class="modern-cottage__title">Modern Cottage</h1>
+        <div class="work-images">
+          <div class="work-images-slider work-images--wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="modern-cottasge__slide">
+                  <img
+                    src="assets/image/our-work-modern-cottage/slide-img-1.jpg"
+                    alt="Work 1"
+                    class=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="modern-cottasge__slide">
+                  <img
+                    src="assets/image/our-work-modern-cottage/slide-img-1.jpg"
+                    alt="Work 1"
+                    class=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="modern-cottasge__slide">
+                  <img
+                    src="assets/image/our-work-modern-cottage/slide-img-1.jpg"
+                    alt="Work 1"
+                    class=""
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="slider-nav-work_btn hero-slide__button work-btn__prev slider-btn"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="assets/image/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button
+              class="slider-nav-work_btn hero-slide__button work-btn__next slider-btn"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="assets/image/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="work-images-nav">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-nav">
+                <img
+                  src="assets/image/our-work-modern-cottage/image-s1.jpg"
+                  alt="Work 1"
+                  class=""
+                />
+              </div>
+              <div class="swiper-slide swiper-slide-nav">
+                <img
+                  src="assets/image/our-work-modern-cottage/image-s1.jpg"
+                  alt="Work 1"
+                  class=""
+                />
+              </div>
+              <div class="swiper-slide swiper-slide-nav">
+                <img
+                  src="assets/image/our-work-modern-cottage/image-s1.jpg"
+                  alt="Work 1"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project goal -->
+    <section class="project-goal">
+      <div class="container project-goal__container page--container">
+        <div class="project-goal__left">
+          <h2 class="title">Project goal</h2>
+          <div class="project-goal__descr">
+            <p>
+              Build a private house 840 sq. feet with a large living room, three
+              bedrooms, two bathrooms, a terrace, a pool and a garage for two
+              cars.
+            </p>
+            <p>
+              Modern design and care for each family member to feel
+              as comfortable as possible in the new home.
+            </p>
+          </div>
+        </div>
+        <div class="project-goal__right">
+          <div class="project-goal__info">
+            <ul class="project-goal-info__list">
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">LOCATION</div>
+                <div class="project-goal-info__value">
+                  2464 Royal Ln. Mesa, New Jersey
+                </div>
+              </li>
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">CLIENT</div>
+                <div class="project-goal-info__value">Darlene Robertson</div>
+              </li>
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">ARCHITECT</div>
+                <div class="project-goal-info__value">HIK Architecture</div>
+              </li>
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">SIZE</div>
+                <div class="project-goal-info__value">840 sq. feet</div>
+              </li>
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">VALUE</div>
+                <div class="project-goal-info__value">$2 million</div>
+              </li>
+              <li class="project-goal-info__item">
+                <div class="project-goal-info__category">COMPLETED</div>
+                <div class="project-goal-info__value">May 2020</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Constructive decisions -->
+    <section class="decisions">
+      <div class="container decisions__container page--container">
+        <div class="decisions__left">
+          <img
+            src="assets/image/our-work-modern-cottage/decisions.jpg"
+            alt=""
+          />
+        </div>
+        <div class="decisions__right">
+          <h2 class="title title_noDescr">Constructive decisions</h2>
+          <ul class="decisions__list">
+            <li class="decisions-list__item">
+              Vitae ultrices ornare eu sed in est quisque duis id.
+            </li>
+            <li class="decisions-list__item">
+              A fermentum in morbi pretium aliquam adipiscing donec tempus.
+            </li>
+            <li class="decisions-list__item">
+              Mauris odio pellentesque commodo, diam.
+            </li>
+            <li class="decisions-list__item">
+              Fermentum vestibulum est fermentum, egestas gravida scelerisque
+              quis.
+            </li>
+            <li class="decisions-list__item">
+              At pharetra libero blandit risus, fringilla sed commodo diam.
+            </li>
+            <li class="decisions-list__item">
+              Integer ultricies viverra ut enim viverra ut.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-section our-work__portfolio">
+      <div class="container">
+        <div class="portfolio-container">
+          <div class="portfolio-section__top">
+            <h2 class="title portfolio-section__title">
+              Browse our selected projects and learn more about our work
+            </h2>
+            <div class="slider-nav portfolio-section__slider-nav">
+              <button class="slider-nav_btn portfolio-section__prev slider-btn">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/image/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="slider-nav_btn portfolio-section__next slider-btn">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/image/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div
+            id="swiper_id"
+            class="swiper portfolio-section__items swoper-no-wsiping"
+          >
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="./assets/image/portfolio-projects-images/image-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button
+                    class="portfolio-list__button"
+                    onclick="
+                      document.location = 'our-work__modern cottage.html'
+                    "
+                  >
+                    View Project
+                  </button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="./assets/image/portfolio-projects-images/image-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button
+                    class="portfolio-list__button"
+                    onclick="
+                      document.location = 'our-work__modern cottage.html'
+                    "
+                  >
+                    View Project
+                  </button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="./assets/image/portfolio-projects-images/image-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button
+                    class="portfolio-list__button"
+                    onclick="
+                      document.location = 'our-work__modern cottage.html'
+                    "
+                  >
+                    View Project
+                  </button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="./assets/image/portfolio-projects-images/image-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button
+                    class="portfolio-list__button"
+                    onclick="
+                      document.location = 'our-work__modern cottage.html'
+                    "
+                  >
+                    View Project
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="lern__more lern__more-portfolio">
+              <h4 class="lern-more__subtitle">Explore all our works</h4>
+              <a href="#"
+                ><button class="button-fill-large">View portfolio</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contacts-section  -->
+    <section
+      class="contacts-section"
+      style="background-image: url(./assets/image/contacts/image.jpg)"
+    >
+      <h2 class="visually-hidden">Contacts</h2>
+      <div class="container contacts-section__container">
+        <form class="contacts-section__form">
+          <h3 class="contacts-form__title">
+            A&nbsp;quick way to&nbsp;discuss details
+          </h3>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Name*</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Phone*</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Message*</span>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              class="form-field__unput form-field__unput--big"
+            ></textarea>
+          </label>
+          <label class="custom-checkbox">
+            <div class="custom-checkbox__item">
+              <input type="checkbox" class="custom-checkbox__input" />
+              <span class="custom-checkbox__text"
+                >I&nbsp;agree to&nbsp;receive communications from Createx
+                Construction Bureau.</span
+              >
+            </div>
+            <a class="contacts-form__btn" href="#"
+              ><button class="button-fill-regular" type="submit">
+                send request
+              </button></a
+            >
+          </label>
+          <!-- <button class="contacts-form__btn btn btn--fill" type="submit">send request</button> -->
+          <!-- <a class="contacts-form__btn" href="#"
+            ><button class="button-fill-regular" type="submit">
+              send request
+            </button></a
+          > -->
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a href="index.html" class="logo footer__logo">
+            <!-- <img src="./assets/image/Navbar/logo.svg" alt="Createx logo"> -->
+            <svg width="142" height="24">
+              <use xlink:href="./assets/image/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="WhatsApp"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Messanger"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#messanger"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Youtube"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__descr">
+            Createx Construction Bureau has been successfully operating
+            in&nbsp;the USA construction market since 2000. We&nbsp;are proud
+            to&nbsp;offer you quality construction and exemplary service. Our
+            mission is&nbsp;to&nbsp;set the highest standards for construction
+            sphere.
+          </p>
+        </div>
+        <form action="#" class="footer-form">
+          <h3 class="footer-form__subtitle">Let&rsquo;s stay in&nbsp;touch</h3>
+          <div class="footer-form__items">
+            <label class="contacts-form__field footer-form__field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                class="footer-field__input"
+              />
+            </label>
+            <a href="#"
+              ><button class="footer-form__btn button-fill-regular">
+                subscribe
+              </button></a
+            >
+          </div>
+          <p class="footer-form__descr">
+            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+            early updates from Createx Construction Bureau.
+          </p>
+        </form>
+        <address class="footer-address">
+          <h3 class="footer-address__title footer__title">HEAD OFFICE</h3>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Address: </span>
+            8502 Preston Rd. Inglewood, New York
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Call: </span>
+            <a href="tel:4055550128">(405) 555-0128</a>
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Email: </span>
+            <a href="mailto:hello@createx.com">hello@createx.com</a>
+          </span>
+        </address>
+        <nav class="footer-nav footer-nav--1" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">WHO WE ARE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About Us</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Available Positions</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav footer-nav--2" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">OUR EXPERIENCE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="services.html" class="footer-nav__link">Services</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Work</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">News</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <small class="footer__copyright"
+          >&copy;&nbsp;All rights reserved. Made with
+          <svg>
+            <use xlink:href="./assets/image/sprite.svg#heart"></use>
+          </svg>
+          by Createx Studio</small
+        >
+        <div class="btn__goToTop">
+          <p>GO TO TOP</p>
+          <a href="#top" data-scroll class="to-top">
+            <button class="button-fill-goToTop">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/image/sprite.svg#ic-up-chevron"></use>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery 3.7.1.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/accordions.js"></script>
+    <script src="./assets/js/graph-modal.js"></script>
+    <script src="./assets/js/modals.js"></script>
+    <script src="./assets/js/portfolio-our-work.js"></script>
+    <script src="./assets/js/slider_thumbs.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/to-top.js"></script>
+  </body>
+</html>

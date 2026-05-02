@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/LatoBlack.woff2") format("wff2"),
+    url("/fonts/Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("/fonts/LatoBold.woff2") format("wff2"),
+    b url("/fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("/fonts/UbuntuRegular.woff2") format("wff2"),
+    url("/fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("/fonts/UbuntuBold.woff2") format("wff2"),
+    url("/fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --color-gray: #424551;
+  --color-light: #fff;
+  --color-primary: #ff5a30;
+  --color-focus: #ff3300;
+  --color-storm: #787a80;
+  --color-ebony: #1e212c;
+  --color-light-gray: #9fa0a3;
+  --color-gray-block: #f4f5f6;
+  --color-no-active-link: #9a9ca5;
+  --grid-gap: 30px;
+}
+/* ----------------------------------------------------------------------------- */
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  overflow: clip;
+  padding-inline: clamp(
+    5px,
+    5px + (15 - 5) * ((100vw - 320px) / (1024 - 320)),
+    15px
+  );
+}
+.title {
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 700;
+  font-size: clamp(
+    20px,
+    20px + (46 - 20) * ((100vw - 320px) / (1024 - 320)),
+    46px
+  );
+  line-height: 130%;
+  vertical-align: middle;
+}
+.title--center {
+  text-align: center;
+}
+.title_noDescr {
+  margin-bottom: clamp(
+    20px,
+    20px + (58 - 20) * ((100vw - 320px) / (1024 - 320)),
+    58px
+  );
+}
+/* --------------------------------------------------------------------------- */
+.recent-news__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(5px, 1vw, 30px);
+  padding-bottom: 500px;
+}
+
+.recent-news__item {
+  box-shadow: 0px 4px 4px -4px #1e212c0d;
+  box-shadow: 0px 12px 10px -6px #9a9ca514;
+  box-shadow: 0px 30px 24px -10px #9a9ca51a;
+  box-shadow: 0px 80px 80px -20px #9a9ca529;
+}
+.recent-news__item--big {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+.recent-news-article__text {
+  padding: 0
+    clamp(10px, 10px + (24 - 10) * ((100vw - 320px) / (1024 - 320)), 24px)
+    clamp(10px, 10px + (24 - 10) * ((100vw - 320px) / (1024 - 320)), 24px)
+    clamp(10px, 10px + (24 - 10) * ((100vw - 320px) / (1024 - 320)), 24px);
+}
+.recent-news--img {
+  width: 100%;
+}
+.recent-news__img--small {
+  max-height: 156px;
+  overflow: hidden;
+  margin-bottom: clamp(
+    10px,
+    10px + (16 - 10) * ((100vw - 320px) / (1024 - 320)),
+    16px
+  );
+}
+.recent-news-article__title {
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 700;
+  font-size: clamp(
+    16px,
+    16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)),
+    20px
+  );
+  line-height: 150%;
+}
+.recent-news__img--big {
+  margin-bottom: clamp(
+    10px,
+    10px + (24 - 10) * ((100vw - 320px) / (1024 - 320)),
+    24px
+  );
+}
+
+.article-meta--big {
+  margin-top: clamp(
+    8px,
+    8px + (12 - 8) * ((100vw - 320px) / (1024 - 320)),
+    12px
+  );
+}
+.article-meta--small {
+  margin-top: 8px;
+}
+.recent-news__item--small {
+  grid-column: span 5;
+}
+
+.recent-news-article__link {
+  font-family: var(--font-ubuntu);
+  font-weight: 700;
+  font-size: clamp(
+    16px,
+    16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)),
+    20px
+  );
+  line-height: 150%;
+  color: var(--color-ebony);
+}
+.article-meta__item {
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  font-size: clamp(
+    10px,
+    10px + (14 - 10) * ((100vw - 320px) / (1024 - 320)),
+    14px
+  );
+  line-height: 150%;
+  color: var(--color-storm);
+  white-space: nowrap;
+}
+.recent-news-article__descr {
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  font-size: 16px;
+  font-size: clamp(
+    12px,
+    12px + (16 - 12) * ((100vw - 320px) / (1024 - 320)),
+    16px
+  );
+  line-height: 160%;
+  color: var(--color-gray);
+  margin-top: clamp(
+    8px,
+    8px + (16 - 8) * ((100vw - 320px) / (1024 - 320)),
+    16px
+  );
+}
+.recent-news-article__descr--small {
+  display: none;
+}
+.article-meta__item:not(:last-child)::after {
+  content: " |";
+  padding-inline: 6px;
+}
+.article-meta__item:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  background-image: url(/Chat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .recent-news__item--big {
+    grid-column: 1 / -1;
+  }
+  .recent-news__item--small {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 480px) {
+  .recent-news__item--small {
+    grid-column: 1 / -1;
+  }
+  .recent-news-article__descr--small {
+    display: block;
+  }
+  .recent-news__img--small {
+    max-height: 100%;
+  }
+}
+/* ------------------------------------------------------------------------- */
+
+.buckup {
+  /* container */
+  padding-inline: clamp(
+    5px,
+    5px + (15 - 5) * ((100vw - 320px) / (1024 - 320)),
+    15px
+  );
+  padding: clamp(
+    20px,
+    20px + (80 - 20) * ((100vw - 320px) / (1024 - 320)),
+    80px
+  );
+  /* main title  42-20*/
+  font-size: clamp(
+    20px,
+    20px + (46 - 20) * ((100vw - 320px) / (1024 - 320)),
+    46px
+  );
+  /* descr  18-14*/
+  font-size: clamp(
+    14px,
+    14px + (18 - 14) * ((100vw - 320px) / (1024 - 320)),
+    18px
+  );
+  /* title 20-16 */
+  font-size: clamp(
+    16px,
+    16px + (20 - 16) * ((100vw - 320px) / (1024 - 320)),
+    20px
+  );
+  /* title 14-12 */
+  font-size: clamp(
+    12px,
+    12px + (14 - 12) * ((100vw - 320px) / (1024 - 320)),
+    14px
+  );
+  font-size: clamp(
+    200px,
+    200px + (350 - 200) * ((100vw - 320px) / (1260 - 768)),
+    350px
+  );
+
+  bottom: clamp(14%, 14% + (50 - 14) * ((100vw - 320px) / (1024 - 320)), 50%);
+  /* увеличить значение при уменьтшении экрана */
+  padding: clamp(0px, 20px - (20 - 0) * ((100vw - 320px) / (1024 - 320)), 20px);
+
+  /* изначально отрицательное число , доводим до 0 */
+
+}
+

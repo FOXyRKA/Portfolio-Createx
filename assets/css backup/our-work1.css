@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/LatoBlack.woff2") format("wff2"),
+    url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/LatoBold.woff2") format("wff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("../fonts/UbuntuRegular.woff2") format("wff2"),
+    url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("../fonts/UbuntuBold.woff2") format("wff2"),
+    url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --color-gray: #424551;
+  --color-light: #fff;
+  --color-primary: #ff5a30;
+  --color-storm: #787a80;
+  --color-ebony: #1e212c;
+  --color-light-gray: #9fa0a3;
+  --color-gray-block: #f4f5f6;
+  --color-no-active: #9a9ca5;
+  --color-gray-bg: #f4f5f6;
+  --grid-gap: 30px;
+}
+
+
+/* @media (max-width: 768px) {
+  .portfolio-our-work__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
+  }
+  .our-work-list__item {
+    text-align: center;
+    width: clamp(
+      80px,
+      80px + (140 - 80) * ((100vw - 520px) / (768 - 520)),
+      140px
+    );
+  }
+  .our-work-item__title {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .portfolio-our-work__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--grid-gap);
+  }
+} */

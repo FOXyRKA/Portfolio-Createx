@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/accordion.css" />
+    <link rel="stylesheet" href="./assets/css/graph-modal.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="top" class="header header__main header_other">
+      <div class="container header_container">
+        <a href="index.html" class="logo header-logo">
+          <svg width="130" height="22">
+            <use xlink:href="./assets/image/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="about-us.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="our-work.html" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="news.html" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Call us</span>
+              <span class="contacts-link__value">(405) 555-0128</span>
+            </div>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Talk to us</span>
+              <span class="contacts-link__value">hello@createx.com</span>
+            </div>
+          </a>
+        </div>
+        <div class="header-contacts--noText">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="nav-burger">
+          <ul class="nav__list-burger">
+            <li class="nav__item-burger">
+              <a href="about-us.html" class="nav__link-burger">About Us</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="services.html" class="nav__link-burger">Services</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="our-work.html" class="nav__link-burger">Work</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="news.html" class="nav__link-burger">News</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="contacts.html" class="nav__link-burger">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- page-hero -->
+    <section
+      class="page-hero height-495"
+      style="background-image: url(assets/image/interior-design/image.png)"
+    >
+      <div class="container page--container">
+        <div class="hero__content">
+          <ul class="breadcrumbs page-hero__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a
+                href="index.html"
+                class="breadcrumbs__link breadcrumbs__link-noActive"
+                >Homepage</a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <a
+                href="services.html"
+                class="breadcrumbs__link breadcrumbs__link-noActive"
+                >Services</a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link-open"
+                >Interior Design</a
+              >
+            </li>
+          </ul>
+          <h1 class="main-title">INTERIOR DESIGN</h1>
+          <p class="main-descr">
+            Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet
+            aenean vulputate elementum blandit amet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- we-offer -->
+    <section class="we-offer">
+      <div class="container we-offer__container page--container">
+        <div class="we-offer__img">
+          <img src="assets/image/interior-design/offer.jpg" alt="image" />
+        </div>
+        <div class="we-offer__content">
+          <h2 class="title we-offer__title">We offer</h2>
+          <div class="accordions">
+            <div class="accordion accordion-1 we-offer__accordion open is-open">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Interior design of apartments</span
+                >
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Adipiscing nunc arcu enim elit mattis eu placerat proin.
+                  Imperdiet elementum faucibus dignissim purus. Fusce parturient
+                  diam magna ullamcorper morbi semper massa ac facilisis.
+                </p>
+              </div>
+            </div>
+            <div class="accordion accordion-2 we-offer__accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Interior design of private houses</span
+                >
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p>
+                  Adipiscing nunc arcu enim elit mattis eu placerat proin.
+                  Imperdiet elementum faucibus dignissim purus. Fusce parturient
+                  diam magna ullamcorper morbi semper massa ac facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section That’s how we do it -->
+    <section class="how-we-do">
+      <div class="container page--container">
+        <h2 class="title title_noDescr">That’s how we do it</h2>
+        <ul class="how-we-do__list">
+          <li class="how-we-do__item">
+            <h3 class="how-we-do__subtitle">Work Estimate</h3>
+            <p class="how-we-do__desrc">
+              Culpa nostrud commodo ea consequat aliquip reprehenderit.
+            </p>
+          </li>
+          <li class="how-we-do__item">
+            <h3 class="how-we-do__subtitle">Contract</h3>
+            <p class="how-we-do__desrc">
+              Laoreet ultrices curabitur luctus quisque consequat. Leo lorem
+              velit imperdiet auctor et tempor.
+            </p>
+          </li>
+          <li class="how-we-do__item">
+            <h3 class="how-we-do__subtitle">Mobilization</h3>
+            <p class="how-we-do__desrc">
+              Odio massa scelerisque purus arcu sed velit eleifend cursus leo.
+            </p>
+          </li>
+          <li class="how-we-do__item">
+            <h3 class="how-we-do__subtitle">Construction Work</h3>
+            <p class="how-we-do__desrc">
+              Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore
+              dolore et ad et veniam ad deserunt.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section Our benefits -->
+    <section class="mission section-offset mission_interior-design">
+      <div class="container mission_interior-design--container">
+        <h2 class="title title--center">Our benefits</h2>
+        <p class="descr">
+          Our mission is to set the highest standards for construction sphere.
+        </p>
+        <ul class="list-reset mission__list">
+          <li
+            class="mission__item"
+            style="
+              background-image: url(assets/image/interior-design/ic-contract-1.svg);
+            "
+          >
+            <h3
+              class="mission__subtitle mission__item--quality mission__subtitle_interior-design"
+            >
+              Fixed Terms & Cost
+            </h3>
+            <p class="mission__descr">
+              Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam
+              velit nostrud aliquip sunt.
+            </p>
+          </li>
+          <li
+            class="mission__item"
+            style="
+              background-image: url(assets/image/interior-design/ic-helmet-2.svg);
+            "
+          >
+            <h3
+              class="mission__subtitle mission__item--safety mission__subtitle_interior-design"
+            >
+              Qualified Workers
+            </h3>
+            <p class="mission__descr">
+              Anim reprehenderit sint voluptate exercitation adipisicing laborum
+              adipisicing. Minim empor est ea.
+            </p>
+          </li>
+          <li
+            class="mission__item"
+            style="
+              background-image: url(assets/image/interior-design/ic-camera-3.svg);
+            "
+          >
+            <h3
+              class="mission__subtitle mission__item--comfort mission__subtitle_interior-design"
+            >
+              Supervision & Control
+            </h3>
+            <p class="mission__descr">
+              Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+              voluptate ullamco proident ea ad.
+            </p>
+          </li>
+        </ul>
+        <button class="button-fill-large btn_interior-design">
+          Discuss a project
+        </button>
+      </div>
+    </section>
+    <!-- section slider -->
+    <section class="interior-design-page__portfolio-section">
+      <div class="container">
+        <div class="portfolio-container">
+          <div class="portfolio-section__top">
+            <h2 class="title portfolio-section__title">Related projects</h2>
+            <div class="slider-nav portfolio-section__slider-nav">
+              <buttin
+                class="btn-reset slider-nav_btn portfolio-section__prev slider-btn"
+              >
+                <svg width="24" height="24">
+                  <use xlink:href="assets/image/sprite.svg#arrow-left"></use>
+                </svg>
+              </buttin>
+              <buttin
+                class="btn-reset slider-nav_btn portfolio-section__next slider-btn"
+              >
+                <svg width="24" height="24">
+                  <use xlink:href="assets/image/sprite.svg#arrow-right"></use>
+                </svg>
+              </buttin>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div
+            id="swiper_id"
+            class="swiper portfolio-section__items swoper-no-wsiping"
+          >
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="assets/image/portfolio-projects-images/image-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button class="portfolio-list__button">View Project</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="assets/image/portfolio-projects-images/image-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button class="portfolio-list__button">View Project</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="assets/image/portfolio-projects-images/image-3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button class="portfolio-list__button">View Project</button>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="portfolio-list__item">
+                  <div class="portfolio-list__img">
+                    <img
+                      src="assets/image/portfolio-projects-images/image-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="portfolio-list__content">
+                    <div class="portfolio-list-content__title">
+                      Modern Double Bedroom
+                    </div>
+                    <div class="portfolio-list-content__descr">
+                      Apartments & flats
+                    </div>
+                  </div>
+                  <button class="portfolio-list__button">View Project</button>
+                </a>
+              </div>
+            </div>
+            <div class="lern__more lern__more-portfolio">
+              <h4 class="lern-more__subtitle">Explore all our works</h4>
+              <button class="button-fill-large">View portfolio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section tabled -->
+    <section class="pricing">
+      <div class="container">
+        <h2 class="title title--center">Pricing</h2>
+        <p class="descr">We offer you three categories of construction.</p>
+        <div class="table__border">
+          <table class="pricing__table table">
+            <caption class="visually-hidden">
+              Tariffs table
+            </caption>
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__th">Items</th>
+                <th class="table__th">
+                  <div class="table__heading">BASIC</div>
+                  <div class="table__per">$20 per m2</div>
+                </th>
+                <th class="table__th">
+                  <div class="table__heading">STANDARD</div>
+                  <div class="table__per">$30 per m2</div>
+                </th>
+                <th class="table__th">
+                  <div class="table__heading">BUSINESS</div>
+                  <div class="table__per">$40 per m2</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table_row">
+                <td class="table__col--title">Installation plan</td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">
+                  Planning solutions (2-3 options)
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">Lighting plan</td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">Flooring plan</td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">Heating floor laying scheme</td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">Air conditioner zones layout</td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">3D visualization of all rooms</td>
+                <td class="table__col">
+                  <span class="table_text">simplified</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">
+                  Visualization of each room (3-4 angles)
+                </td>
+                <td class="table__col"></td>
+                <td class="table__col"></td>
+                <td class="table__col">
+                  <span class="table_check">Available</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col--title">Terms</td>
+                <td class="table__col">
+                  <span class="table_text">10 days</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_text">20 days</span>
+                </td>
+                <td class="table__col">
+                  <span class="table_text">30 days</span>
+                </td>
+              </tr>
+              <tr class="table_row">
+                <td class="table__col"></td>
+                <td class="table__col">
+                  <a href="#"
+                    ><button class="button-stroke-small--table">
+                      send request
+                    </button></a
+                  >
+                </td>
+                <td class="table__col">
+                  <a href="#"
+                    ><button class="button-stroke-small--table">
+                      send request
+                    </button></a
+                  >
+                </td>
+                <td class="table__col">
+                  <a href="#"
+                    ><button class="button-stroke-small--table">
+                      send request
+                    </button></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="interior-design-page__parnters-container">
+          <h2 class="title title--center title_noDescr">
+            Supported by&nbsp;12+&nbsp;partners
+          </h2>
+          <ul class="list-reset parnters__list">
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_1.png"
+                  alt="Logo 1"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_2.png"
+                  alt="Logo 2"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_3.png"
+                  alt="Logo 3"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_4.png"
+                  alt="Logo 4"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_5.png"
+                  alt="Logo 5"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_6.png"
+                  alt="Logo 6"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--contacts-section  -->
+    <section
+      class="contacts-section"
+      style="background-image: url(./assets/image/contacts/image.jpg)"
+    >
+      <h2 class="visually-hidden">Contacts</h2>
+      <div class="container contacts-section__container">
+        <form class="contacts-section__form">
+          <h3 class="contacts-form__title">
+            A&nbsp;quick way to&nbsp;discuss details
+          </h3>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Name*</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Phone*</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Message*</span>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              class="form-field__unput form-field__unput--big"
+            ></textarea>
+          </label>
+          <label class="custom-checkbox">
+            <div class="custom-checkbox__item">
+              <input type="checkbox" class="custom-checkbox__input" />
+              <span class="custom-checkbox__text"
+                >I&nbsp;agree to&nbsp;receive communications from Createx
+                Construction Bureau.</span
+              >
+            </div>
+            <a class="contacts-form__btn" href="#"
+              ><button class="button-fill-regular" type="submit">
+                send request
+              </button></a
+            >
+          </label>
+          <!-- <button class="contacts-form__btn btn btn--fill" type="submit">send request</button> -->
+          <!-- <a class="contacts-form__btn" href="#"
+            ><button class="button-fill-regular" type="submit">
+              send request
+            </button></a
+          > -->
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a href="index.html" class="logo footer__logo">
+            <!-- <img src="./assets/image/Navbar/logo.svg" alt="Createx logo"> -->
+            <svg width="142" height="24">
+              <use xlink:href="./assets/image/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="WhatsApp"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Messanger"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#messanger"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Youtube"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__descr">
+            Createx Construction Bureau has been successfully operating
+            in&nbsp;the USA construction market since 2000. We&nbsp;are proud
+            to&nbsp;offer you quality construction and exemplary service. Our
+            mission is&nbsp;to&nbsp;set the highest standards for construction
+            sphere.
+          </p>
+        </div>
+        <form action="#" class="footer-form">
+          <h3 class="footer-form__subtitle">Let&rsquo;s stay in&nbsp;touch</h3>
+          <div class="footer-form__items">
+            <label class="contacts-form__field footer-form__field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                class="footer-field__input"
+              />
+            </label>
+            <a href="#"
+              ><button class="footer-form__btn button-fill-regular">
+                subscribe
+              </button></a
+            >
+          </div>
+          <p class="footer-form__descr">
+            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+            early updates from Createx Construction Bureau.
+          </p>
+        </form>
+        <address class="footer-address">
+          <h3 class="footer-address__title footer__title">HEAD OFFICE</h3>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Address: </span>
+            8502 Preston Rd. Inglewood, New York
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Call: </span>
+            <a href="tel:4055550128">(405) 555-0128</a>
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Email: </span>
+            <a href="mailto:hello@createx.com">hello@createx.com</a>
+          </span>
+        </address>
+        <nav class="footer-nav footer-nav--1" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">WHO WE ARE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About Us</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Available Positions</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav footer-nav--2" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">OUR EXPERIENCE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="services.html" class="footer-nav__link">Services</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Work</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">News</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <small class="footer__copyright"
+          >&copy;&nbsp;All rights reserved. Made with
+          <svg>
+            <use xlink:href="./assets/image/sprite.svg#heart"></use>
+          </svg>
+          by Createx Studio</small
+        >
+        <div class="btn__goToTop">
+          <p>GO TO TOP</p>
+          <a href="#top" data-scroll class="to-top">
+            <button class="button-fill-goToTop">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/image/sprite.svg#ic-up-chevron"></use>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery 3.7.1.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/accordions.js"></script>
+    <script src="./assets/js/graph-modal.js"></script>
+    <script src="./assets/js/modals.js"></script>
+    <script src="./assets/js/portfolio-our-work.js"></script>
+    <script src="./assets/js/slider_thumbs.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/to-top.js"></script>
+  </body>
+</html>

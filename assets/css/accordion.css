@@ -1,0 +1,34 @@
+.accordion{
+    --accordion-time: 0.3s;
+}
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.accordion__cotrol{
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.accordion__content{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all var(--accordion-time) ease-out;
+    box-sizing: content-box;
+}
+.accordion__title{
+    font-weight: 700;
+    font-size: 1.17em;
+}
+/* .accrodrion__icon{
+    transition: all var(--accordion-time) ease-out;
+} */
+/* .is-open .accordion__icon{
+    transform: rotate(45deg);
+} */
+.is-open .accordion__content{
+    opacity: 1;
+
+}

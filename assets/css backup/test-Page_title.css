@@ -1,0 +1,50 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --color-gray: #424551;
+  --color-light: #fff;
+  --color-primary: #ff5a30;
+  --color-storm: #787a80;
+  --color-ebony: #1e212c;
+  --color-light-gray: #9fa0a3;
+  --color-gray-block: #f4f5f6;
+  --color-no-active: #9a9ca5;
+  --grid-gap: 30px;
+}
+/* ------------------.header_other--------------- */
+.header_other {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+/* -----------------------page-hero------------- */
+.page-hero {
+  padding: 152px 0 0;
+  height: 600px;
+  background-color: var(--color-gray-block);
+  background-position: right -168px top;
+  background-repeat: no-repeat;
+}
+.page-hero__title {
+  font-family: var(--font-ubuntu);
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: var(--color-ebony);
+  margin-top: 40px;
+}
+.page-hero__descr {
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-storm);
+  margin-top: 24px;
+  max-width: 600px;
+}
+/* ----------------------------------------------------- */
+

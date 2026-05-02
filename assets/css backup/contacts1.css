@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/LatoBlack.woff2") format("wff2"),
+    url("../fonts/Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/LatoBold.woff2") format("wff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("../fonts/UbuntuRegular.woff2") format("wff2"),
+    url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src:
+    url("../fonts/UbuntuBold.woff2") format("wff2"),
+    url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --color-gray: #424551;
+  --color-light: #fff;
+  --color-primary: #ff5a30;
+  --color-storm: #787a80;
+  --color-ebony: #1e212c;
+  --color-light-gray: #9fa0a3;
+  --color-gray-block: #f4f5f6;
+  --color-no-active: #9a9ca5;
+  --color-gray-bg: #f4f5f6;
+  --grid-gap: 30px;
+}
+/* ---------------------------------------------------------------header */
+.page-hero_contacts {
+  background-color: var(--color-gray-block);
+  background-position: right -171px top 0px;
+  background-repeat: no-repeat;
+  padding: 152px 0 209px;
+}
+/* ---------------------------------------------------------------section contact */
+.contact-section {
+  padding: clamp(
+      20px,
+      20px + (122 - 20) * ((100vw - 320px) / (1024 - 320)),
+      122px
+    )
+    0 clamp(20px, 20px + (100 - 20) * ((100vw - 320px) / (1024 - 320)), 100px);
+  background-color: var(--color-light);
+}
+.contact-section__title {
+  text-align: center;
+}
+.contact-section__descr {
+  font-family: var(--font-ubuntu);
+  color: var(--color-storm);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.contact-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(10px, 10px + (50 - 10) * ((100vw - 1150px) / (1260 - 1150)), 50px);
+}
+.contact-block__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-ubuntu);
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+
+.contact-block__right {
+  max-width: 600px;
+  width: 100%;
+}
+.contact-block-right__blocks {
+  display: flex;
+  gap: 30px;
+}
+.contact-block-right__left {
+  width: 100%;
+  max-width: 285px;
+}
+.contact-block__left {
+  text-align: center;
+  overflow: hidden;
+  margin-right: clamp(
+    0px,
+    0px + (77 - 0) * ((100vw - 768px) / (1920 - 768)),
+    77px
+  );
+}
+.contact-block__left img {
+  object-fit: cover;
+  max-width: 495px;
+}
+.contact-block-right__right {
+  width: 100%;
+  max-width: 285px;
+}
+.contact-block-field__unput {
+  height: 52px;
+  color: var(--color-ebony);
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  font-size: clamp(
+    14px,
+    14px + (16 - 14) * ((100vw - 320px) / (1024 - 320)),
+    16px
+  );
+  line-height: 150%;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  background-color: var(--color-gray-block);
+  padding: 13px 15px;
+}
+.contact-block-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.contact-block__field--big {
+  margin-bottom: 36px;
+}
+.contact-block-field__unput--big {
+  min-height: 128px;
+}
+.contact-block-checkbox__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-block-checkbox__text {
+  display: inline-flex;
+  font-family: var(--font-ubuntu);
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  max-width: 303px;
+  margin-left: 12px;
+}
+/* ------------------------------------------------------------------------- */
+
+/*--------------------------------------------cherbox settings-------------*/
+.contact-block-checkbox {
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 21px;
+}
+/* Прячем стандартный чекбокс */
+.contact-block-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Создаем кастомный квадрат */
+.contact-block-checkbox__text {
+  position: relative;
+  padding-left: 16px; /* Отступ для квадрата */
+}
+.contact-block-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 16px; /* Размер квадрата */
+  height: 16px;
+  border: 1px solid #ccc; /* Цвет рамки */
+  border-radius: 4px; /* Скругление углов */
+  background-color: #fff; /* Цвет фона */
+  transition: all 0.25s ease;
+}
+/* Стили для активного (отмеченного) состояния */
+.contact-block-checkbox__input:checked + .contact-block-checkbox__text::before {
+  background-color: var(--color-primary); /* Синий цвет фона */
+  border-color: var(--color-primary); /* Синий цвет рамки */
+}
+/* Рисуем галочку */
+.contact-block-checkbox__input:checked + .contact-block-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 25%;
+  transform: translate(-50%, -60%) rotate(45deg); /* Сдвиг по вертикали */
+  width: 6px;
+  height: 10px;
+  border: solid white; /* Цвет галочки */
+  border-width: 0 2px 2px 0;
+}
+.contact-block__btn {
+  font-family: var(--font-ubuntu);
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  height: 52px;
+  width: 210px;
+  border-radius: 4px;
+}
+/* ------------------------------------------------------------------------Our offices--------- */
+.our-offices-address__list {
+  display: flex;
+  justify-content: center;
+  column-gap: clamp(
+    30px,
+    30px + (240 - 30) * ((100vw - 768px) / (1920 - 768)),
+    240px
+  );
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+.our-offices {
+  padding: clamp(
+      20px,
+      20px + (80 - 20) * ((100vw - 320px) / (1024 - 320)),
+      80px
+    )
+    0 clamp(20px, 20px + (118 - 20) * ((100vw - 320px) / (1024 - 320)), 118px);
+  background-color: var(--color-gray-bg);
+}
+.our-offices-address__item {
+  width: 250px;
+}
+.our-offices-address__title {
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 700;
+  font-size: clamp(
+    18px,
+    18px + (28 - 18) * ((100vw - 320px) / (900 - 320)),
+    28px
+  );
+  line-height: 150%;
+  vertical-align: middle;
+  margin-bottom: clamp(
+    10px,
+    10px + (42 - 10) * ((100vw - 768px) / (1024 - 768)),
+    42px
+  );
+}
+.our-offices-address__name {
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 400;
+  line-height: 160%;
+}
+.our-offices-address__link {
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  line-height: 160%;
+  vertical-align: middle;
+  margin-bottom: clamp(
+    0px,
+    0px + (20 - 0) * ((100vw - 768px) / (1024 - 768)),
+    20px
+  );
+  margin-top: clamp(0px, 0px + (4 - 0) * ((100vw - 768px) / (1024 - 768)), 4px);
+  text-decoration: underline !important;
+}
+
+.our-offices__descr {
+  font-family: var(--font-ubuntu);
+  color: var(--color-storm);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.offices-address__item {
+  display: block;
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 4px;
+}
+.offices-address__item a {
+  color: var(--color-ebony);
+}
+.offices-address__name {
+  font-family: var(--font-ubuntu);
+  color: var(--color-storm);
+  font-weight: 400;
+  line-height: 160%;
+}
+/* --------------------------------------------------------------------------- */
+.find-us-at__title {
+  font-family: var(--font-ubuntu);
+  color: var(--color-ebony);
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+.find-us-at {
+  margin-top: clamp(
+    20px,
+    20px + (120 - 20) * ((100vw - 320px) / (1024 - 320)),
+    120px
+  );
+}
+.find-us-at__socials {
+  display: flex;
+  justify-content: center;
+  gap: clamp(16px, 16px + (24 - 16) * ((100vw - 320px) / (1024 - 320)), 24px);
+  margin-top: clamp(
+    20px,
+    20px + (40 - 20) * ((100vw - 320px) / (1024 - 320)),
+    40px
+  );
+}
+.find-us-at__socials svg {
+  width: clamp(24px, 24px + (32 - 24) * ((100vw - 320px) / (1024 - 320)), 32px);
+  aspect-ratio: 1;
+  fill: var(--color-storm);
+  transition: all 0.3s ease-in-out;
+}
+.find-us-at__socials svg:hover {
+  fill: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.contacts-checkbox__flex {
+  display: flex;
+  gap: 24px;
+}
+.contacts-form__fieldset {
+  padding: 20px 0;
+}
+.contacts-radio__text {
+  position: relative;
+  margin-left: 27px;
+}
+
+.checkbox-redio__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.contacts-radio__text::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Размер квадрата */
+  height: 16px;
+  border: 1px solid #b3b7bc; /* Цвет рамки */
+  border-radius: 100%; /* Скругление углов */
+  background-color: #fff; /* Цвет фона */
+  transition: all 0.25s ease;
+}
+
+/* Стили для активного (отмеченного) состояния */
+.checkbox-redio__input:checked + .contacts-radio__text::before {
+  background-color: var(--color-light);
+  border-color: var(--color-primary);
+}
+
+.checkbox-redio__input:checked + .contacts-radio__text::after {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 28%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 100%;
+}
+@media (max-width: 900px) {
+  .contact-block {
+    display: block;
+  }
+  .contact-block-right__blocks {
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  .contact-block__left {
+    text-align: center;
+  }
+
+  .contact-block__right {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+  .contact-block-right__left {
+  }
+  .contact-block-right__right {
+  }
+  .contact-block-checkbox__btn {
+    flex-wrap: wrap;
+  }
+  .contact-block__left img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contact-block-right__blocks {
+    justify-content: center;
+  }
+  .contact-block__field--big {
+    margin-bottom: clamp(
+      20px,
+      20px + (36 - 20) * ((100vw - 320px) / (768 - 320)),
+      36px
+    );
+  }
+  .contact-block-checkbox__text {
+    font-size: clamp(
+      14px,
+      14px + (16 - 14) * ((100vw - 320px) / (768 - 320)),
+      16px
+    );
+  }
+  .contact-block-checkbox {
+    margin-bottom: clamp(
+      10px,
+      10px + (21 - 10) * ((100vw - 320px) / (768 - 320)),
+      21px
+    );
+  }
+  .contact-block-checkbox__btn {
+    justify-content: center;
+  }
+  .contact-block__field {
+    margin-bottom: clamp(
+      10px,
+      10px + (24 - 10) * ((100vw - 320px) / (768 - 320)),
+      24px
+    );
+  }
+  .contact-block-right__right {
+    max-width: 100%;
+  }
+  .contact-block-right__left {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/accordion.css" />
+    <link rel="stylesheet" href="./assets/css/graph-modal.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="top" class="header header__main header_other">
+      <div class="container header_container">
+        <a href="index.html" class="logo header-logo">
+          <svg width="130" height="22">
+            <use xlink:href="./assets/image/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="about-us.html" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="our-work.html" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="news.html" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Call us</span>
+              <span class="contacts-link__value">(405) 555-0128</span>
+            </div>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+            <div class="header-icon--text">
+              <span class="contacts-link__caption">Talk to us</span>
+              <span class="contacts-link__value">hello@createx.com</span>
+            </div>
+          </a>
+        </div>
+        <div class="header-contacts--noText">
+          <a
+            href="tel:4055550128"
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
+            <svg class="header-icon-iphone header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+            </svg>
+          </a>
+          <a
+            href="mailto:hello@createx.com"
+            class="header-contacts__link contacts-link contacts-link__mail"
+          >
+            <svg class="header-icon-mail header-icon--contacts">
+              <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="nav-burger">
+          <ul class="nav__list-burger">
+            <li class="nav__item-burger">
+              <a href="about-us.html" class="nav__link-burger">About Us</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="services.html" class="nav__link-burger">Services</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="our-work.html" class="nav__link-burger">Work</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="news.html" class="nav__link-burger">News</a>
+            </li>
+            <li class="nav__item-burger">
+              <a href="contacts.html" class="nav__link-burger">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!-- page-hero -->
+    <section
+      class="page-hero height-495"
+      style="background-image: url(assets/image/about-us/Group.png)"
+    >
+      <div class="container page--container">
+        <div class="hero__content">
+          <ul class="breadcrumbs page-hero__breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a
+                href="index.html"
+                class="breadcrumbs__link breadcrumbs__link-noActive"
+                >Homepage</a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link-open">About Us</a>
+            </li>
+          </ul>
+          <h1 class="main-title">ABOUT US</h1>
+          <p class="main-descr">
+            Createx Construction Bureau has been successfully operating in the
+            USA construction market since 2000. We are proud to offer you
+            quality construction and exemplary service.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section statistics -->
+    <section class="about-us__statistics">
+      <div class="container page--container">
+        <ul class="about-us__list">
+          <li class="about-us__items">
+            <svg class="about-us-item__icon" aria-hidden="true">
+              <use xlink:href="assets/image/sprite.svg#ic-like"></use>
+            </svg>
+            <div class="about-us__state">60%</div>
+            <div class="about-us__descr">
+              Clients on the recommendation of friends
+            </div>
+          </li>
+          <li class="about-us__items">
+            <svg class="about-us-item__icon" aria-hidden="true">
+              <use xlink:href="assets/image/sprite.svg#ic-painting"></use>
+            </svg>
+            <div class="about-us__state">2400+</div>
+            <div class="about-us__descr">Apartments renovated</div>
+          </li>
+          <li class="about-us__items">
+            <svg class="about-us-item__icon" aria-hidden="true">
+              <use xlink:href="assets/image/sprite.svg#ic-helmet"></use>
+            </svg>
+            <div class="about-us__state">670</div>
+            <div class="about-us__descr">Qualified specialists</div>
+          </li>
+          <li class="about-us__items">
+            <svg class="about-us-item__icon" aria-hidden="true">
+              <use xlink:href="assets/image/sprite.svg#ic-pantone"></use>
+            </svg>
+            <div class="about-us__state">150000+m²</div>
+            <div class="about-us__descr">Finishing work was carried out</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Courtney Alexander -->
+    <section class="courtney-alexander">
+      <div class="container courtney-alexander--container page--container">
+        <div class="courtney-alexander__wrapper">
+          <div class="courtney-alexander_image">
+            <img src="assets/image/about-us/Courtney Alexander.jpg" alt="" />
+          </div>
+          <div class="courtney-alexander__about">
+            <p
+              class="courtney-alexander__about--title courtney-alexander__about--title-braces"
+            >
+              Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in.
+              Sed aliquet in egestas hac at proin sed quam. Etiam aliquet
+              sagittis non, massa cum pulvinar. Et in leo, tempus purus
+              vestibulum ut blandit et mi. Odio massa purus vel praesent arcu
+              enim elit felis viverra.
+            </p>
+            <p class="courtney-alexander__about--title">
+              Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra
+              quis metus amet eleifend amet. Vet suspendisse faucibus tempor
+              ipsum integer.
+            </p>
+            <div class="courtney-alexander__name-signature">
+              <div class="courtney-alexander__descr">
+                <p class="courtney-alexander__name">Courtney Alexander</p>
+                <p class="courtney-alexander__country">
+                  CEO - Createx Construction Bureau
+                </p>
+              </div>
+              <img
+                src="assets/image/about-us/signature.svg"
+                alt=""
+                class="courtney-alexander__signature"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our core values -->
+    <section class="about-us--offset">
+      <div class="container">
+        <h2 class="title title--center">Our core values</h2>
+        <p class="descr">
+          Our mission is&nbsp;to&nbsp;set the highest standards for construction
+          sphere.
+        </p>
+        <ul class="list-reset mission__list">
+          <li
+            class="mission__item"
+            style="background-image: url(./assets/image/ic-like.svg)"
+          >
+            <h3 class="mission__subtitle mission__item--quality">Quality</h3>
+            <p class="mission__descr">
+              Culpa nostrud commodo ea&nbsp;consequat aliquip reprehenderit.
+              Veniam velit nostrud aliquip sunt.
+            </p>
+          </li>
+          <li
+            class="mission__item"
+            style="background-image: url(./assets/image/ic-hand.svg)"
+          >
+            <h3 class="mission__subtitle mission__item--safety">Safety</h3>
+            <p class="mission__descr">
+              Anim reprehenderit sint voluptate exercitation adipisicing laborum
+              adipisicing. Minim empor est&nbsp;ea.
+            </p>
+          </li>
+          <li
+            class="mission__item"
+            style="background-image: url(./assets/image/ic-slippers.svg)"
+          >
+            <h3 class="mission__subtitle mission__item--comfort">Comfort</h3>
+            <p class="mission__descr">
+              Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+              voluptate ullamco proident ea&nbsp;ad.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about-us history -->
+    <section class="history-block">
+      <div class="container">
+        <div class="title_and_btn">
+          <h2 class="title">Our history</h2>
+          <div class="btns history_btns--slider">
+            <buttin
+              class="btn-reset slider-nav_btn our-history__prev slider-btn"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="assets/image/sprite.svg#arrow-left"></use>
+              </svg>
+            </buttin>
+            <buttin
+              class="btn-reset slider-nav_btn our-history__next slider-btn"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="assets/image/sprite.svg#arrow-right"></use>
+              </svg>
+            </buttin>
+          </div>
+        </div>
+        <div class="history__blocks">
+          <div class="history__left-block">
+            <ul class="left-block__list">
+              <li class="left-block__item left-block__item--main">
+                <button class="history-nav__btn history-nav__btn__active">
+                  Present
+                </button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">March 2019</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">November 2018</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">July 2015</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">August 2010</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">February 2007</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">May 2004</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">October 2001</button>
+              </li>
+              <li class="left-block__item">
+                <button class="history-nav__btn">June 2000</button>
+              </li>
+            </ul>
+          </div>
+          <div class="history__right-block">
+            <!-- Swiper -->
+            <div class="swiper mySlider-history">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="about-us__swiper-slide">
+                    <img src="assets/image/about-us/slider-img.jpg" alt="" />
+                    <p class="right-block__description">
+                      Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      viverra porttitor in. Eu nec vitae, malesuada vitae
+                      egestas integer et morbi. Maecenas sed quis diam posuere
+                      malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners about-us__partners">
+      <div class="container">
+        <div class="parnters-container">
+          <h2 class="title title--center">Our partners</h2>
+          <p class="descr">
+            We are supported by 12+ industry bodies and media partners
+          </p>
+          <ul class="parnters__list">
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_1.png"
+                  alt="Logo 1"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_2.png"
+                  alt="Logo 2"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_3.png"
+                  alt="Logo 3"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_4.png"
+                  alt="Logo 4"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_5.png"
+                  alt="Logo 5"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_6.png"
+                  alt="Logo 6"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_7.png"
+                  alt="Logo 7"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_8.png"
+                  alt="Logo 8"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_9.png"
+                  alt="Logo 9"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_10.png"
+                  alt="Logo 10"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_11.png"
+                  alt="Logo 11"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="#" class="partners__link">
+                <img
+                  src="assets/image/partners/client-logo_12.png"
+                  alt="Logo 12"
+                  class="partners__logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- our teams -->
+    <section class="our-team">
+      <div class="container">
+        <h1 class="title title--center">Our team</h1>
+        <p class="descr">
+          People are at the heart of Createx Construction Bureau
+        </p>
+        <ul class="about-us__list-our-team">
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-1.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-2.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-3.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-4.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-5.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-6.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-7.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+          <li class="about-us-list__items">
+            <div class="about-us__img">
+              <img src="assets/image/about-us/teams/team-8.jpg" alt="" />
+              <div class="about-us__socials">
+                <a href="" class="about-us-social__link">
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#ic-LinkedIn"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#twitter"></use>
+                  </svg>
+                  <svg class="about-us__social-links">
+                    <use xlink:href="assets/image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about-us__content">
+              <div class="about-us__title">Johnny Lane</div>
+              <div class="about-us__desrc">Commercial Manager</div>
+            </div>
+          </li>
+        </ul>
+        <div class="available-positions">
+          <p>
+            Become a part of the best team in the construction market of the
+            USA. <a href="available-positions.html">Available Positions</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section map -->
+    <section class="section-map">
+      <div class="container">
+        <h1 class="title title--center title_noDescr">We work worldwide</h1>
+        <img class="map_image" src="assets/image/map/map.svg" alt="" />
+      </div>
+    </section>
+    <!--contacts-section  -->
+    <section
+      class="contacts-section"
+      style="background-image: url(./assets/image/contacts/image.jpg)"
+    >
+      <h2 class="visually-hidden">Contacts</h2>
+      <div class="container contacts-section__container">
+        <form class="contacts-section__form">
+          <h3 class="contacts-form__title">
+            A&nbsp;quick way to&nbsp;discuss details
+          </h3>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Name*</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Phone*</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              class="form-field__unput"
+            />
+          </label>
+          <label class="from-field contacts-form__field">
+            <span class="contacts-form__text">Message*</span>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              class="form-field__unput form-field__unput--big"
+            ></textarea>
+          </label>
+          <label class="custom-checkbox">
+            <div class="custom-checkbox__item">
+              <input type="checkbox" class="custom-checkbox__input" />
+              <span class="custom-checkbox__text"
+                >I&nbsp;agree to&nbsp;receive communications from Createx
+                Construction Bureau.</span
+              >
+            </div>
+            <a class="contacts-form__btn" href="#"
+              ><button class="button-fill-regular" type="submit">
+                send request
+              </button></a
+            >
+          </label>
+          <!-- <button class="contacts-form__btn btn btn--fill" type="submit">send request</button> -->
+          <!-- <a class="contacts-form__btn" href="#"
+            ><button class="button-fill-regular" type="submit">
+              send request
+            </button></a
+          > -->
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__left">
+          <a href="index.html" class="logo footer__logo">
+            <!-- <img src="./assets/image/Navbar/logo.svg" alt="Createx logo"> -->
+            <svg width="142" height="24">
+              <use xlink:href="./assets/image/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="WhatsApp"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Messanger"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#messanger"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Facebook"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Twitter"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                aria-label="Youtube"
+              >
+                <svg>
+                  <use xlink:href="./assets/image/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__descr">
+            Createx Construction Bureau has been successfully operating
+            in&nbsp;the USA construction market since 2000. We&nbsp;are proud
+            to&nbsp;offer you quality construction and exemplary service. Our
+            mission is&nbsp;to&nbsp;set the highest standards for construction
+            sphere.
+          </p>
+        </div>
+        <form action="#" class="footer-form">
+          <h3 class="footer-form__subtitle">Let&rsquo;s stay in&nbsp;touch</h3>
+          <div class="footer-form__items">
+            <label class="contacts-form__field footer-form__field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                class="footer-field__input"
+              />
+            </label>
+            <a href="#"
+              ><button class="footer-form__btn button-fill-regular">
+                subscribe
+              </button></a
+            >
+          </div>
+          <p class="footer-form__descr">
+            *Subscribe to&nbsp;our newsletter to&nbsp;receive communications and
+            early updates from Createx Construction Bureau.
+          </p>
+        </form>
+        <address class="footer-address">
+          <h3 class="footer-address__title footer__title">HEAD OFFICE</h3>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Address: </span>
+            8502 Preston Rd. Inglewood, New York
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Call: </span>
+            <a href="tel:4055550128">(405) 555-0128</a>
+          </span>
+          <span class="footer-address__item">
+            <span class="footer-address__name"> Email: </span>
+            <a href="mailto:hello@createx.com">hello@createx.com</a>
+          </span>
+        </address>
+        <nav class="footer-nav footer-nav--1" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">WHO WE ARE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About Us</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Available Positions</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav footer-nav--2" title="secondary navigation">
+          <div class="footer-nav__col">
+            <h3 class="footer-nav__title footer__title">OUR EXPERIENCE</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="services.html" class="footer-nav__link">Services</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Work</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">News</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <small class="footer__copyright"
+          >&copy;&nbsp;All rights reserved. Made with
+          <svg>
+            <use xlink:href="./assets/image/sprite.svg#heart"></use>
+          </svg>
+          by Createx Studio</small
+        >
+        <div class="btn__goToTop">
+          <p>GO TO TOP</p>
+          <a href="#top" data-scroll class="to-top">
+            <button class="button-fill-goToTop">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/image/sprite.svg#ic-up-chevron"></use>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery 3.7.1.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/accordions.js"></script>
+    <script src="./assets/js/graph-modal.js"></script>
+    <script src="./assets/js/modals.js"></script>
+    <script src="./assets/js/portfolio-our-work.js"></script>
+    <script src="./assets/js/slider_thumbs.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/to-top.js"></script>
+  </body>
+</html>
