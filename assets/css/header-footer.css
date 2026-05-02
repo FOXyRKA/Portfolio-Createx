@@ -964,7 +964,7 @@ burger-menu .header-contacts .contacts-link span:hover {
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 15;
+  z-index: 1;
   padding: 13px 0;
   user-select: none;
   margin-bottom: -22px;
