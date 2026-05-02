@@ -1906,4 +1906,7 @@ footer a:hover {
   .footer__copyright {
     font-size: 10px;
   }
+  .portfolio-section__slider-nav {
+    transform: translateX(0px);
+  }
 }
