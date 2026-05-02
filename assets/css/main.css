@@ -395,10 +395,10 @@ svg {
   transition: all 0.5s ease-in-out;
 }
 .services-item--constract::before {
-  background-image: url(/assets/image/service/image.jpg);
+  background-image: url(./assets/image/service/image.jpg);
 }
 .services-item--project-development::before {
-  background-image: url(/assets/image/service/image.jpg);
+  background-image: url(./assets/image/service/image.jpg);
 }
 .services-item::after {
   content: "";
@@ -760,7 +760,7 @@ svg {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  background-image: url(/Chat.png);
+  background-image: url(./Chat.png);
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
@@ -934,7 +934,7 @@ svg {
   height: 24px;
   top: 0;
   left: -34px;
-  background-image: url(/assets/image/Attach.svg);
+  background-image: url(./assets/image/Attach.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1300,7 +1300,7 @@ svg {
   left: -60px;
   width: 28px;
   height: 20px;
-  background-image: url(/assets/image/about-us/braces.svg);
+  background-image: url(./assets/image/about-us/braces.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1746,7 +1746,7 @@ svg {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  background-image: url(/assets/image/recent/Chat.png);
+  background-image: url(./assets/image/recent/Chat.png);
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
@@ -1917,7 +1917,7 @@ svg {
   height: 16px;
   width: 16px;
   left: 0;
-  background-image: url(/assets/image/Available-positions/Pin.svg);
+  background-image: url(./assets/image/Available-positions/Pin.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1932,7 +1932,7 @@ svg {
   height: 16px;
   width: 16px;
   left: 0;
-  background-image: url(/assets/image/Available-positions/Clock.svg);
+  background-image: url(./assets/image/Available-positions/Clock.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2580,7 +2580,7 @@ svg {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  background-image: url(/assets/image/recent/Chat.png);
+  background-image: url(./assets/image/recent/Chat.png);
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
@@ -2591,7 +2591,7 @@ svg {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  background-image: url(/assets/image/news-page/Clock.svg);
+  background-image: url(./assets/image/news-page/Clock.svg);
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
@@ -2680,7 +2680,7 @@ svg {
   left: -60px;
   width: 28px;
   height: 20px;
-  background-image: url(/assets/image/about-us/braces.svg);
+  background-image: url(./assets/image/about-us/braces.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2706,7 +2706,7 @@ svg {
   top: 5px;
   width: 16px;
   height: 16px;
-  background-image: url(/assets/image/our-work-modern-cottage/check.svg);
+  background-image: url(./assets/image/our-work-modern-cottage/check.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2881,7 +2881,7 @@ svg {
     left: -30px;
     width: 14px;
     height: 10px;
-    background-image: url(/assets/image/about-us/braces.svg);
+    background-image: url(./assets/image/about-us/braces.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3208,7 +3208,7 @@ svg {
   top: 3px;
   width: 20px;
   height: 20px;
-  background-image: url(/assets/image/our-work-modern-cottage/check.svg);
+  background-image: url(./assets/image/our-work-modern-cottage/check.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3462,7 +3462,7 @@ svg {
   top: 28px;
   height: 1px;
   width: 75%;
-  background-image: url(/assets/image/interior-design/line.svg);
+  background-image: url(./assets/image/interior-design/line.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3582,7 +3582,7 @@ svg {
   min-width: 600px;
 }
 .table_check {
-  background-image: url(/assets/image/interior-design/Mark.svg);
+  background-image: url(./assets/image/interior-design/Mark.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3710,7 +3710,7 @@ td {
     top: 28px;
     height: 1px;
     width: 75%;
-    background-image: url(/assets/image/interior-design/line.svg);
+    background-image: url(./assets/image/interior-design/line.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
