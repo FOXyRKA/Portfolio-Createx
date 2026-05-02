@@ -376,6 +376,7 @@ svg {
   border: 1px solid #e5e8ed;
   border-radius: 4px;
   background: var(--color-light);
+  z-index: 1;
 }
 
 .services-item::before {
