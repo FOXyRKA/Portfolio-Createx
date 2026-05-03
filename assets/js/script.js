@@ -132,20 +132,33 @@ if (document.querySelector(".video-block")) {
   video.onplay = function () {
     // console.log("Play");
   };
-  video.onpause = function () {
-
-  };
+  video.onpause = function () {};
 }
 
 // ------------------------------------------------------------------------------------------------ GO TO TOP
 // Показываем кнопку только когда страница прокручена вниз
-window.addEventListener('scroll', function() {
-  const button = document.querySelector('.btn__goToTop');
+window.addEventListener("scroll", function () {
+  const button = document.querySelector(".btn__goToTop");
   if (window.pageYOffset > 1000) {
-    button.classList.add( 'btn__goToTop--active' );
+    button.classList.add("btn__goToTop--active");
   } else {
-    button.classList.remove( 'btn__goToTop--active' );
+    button.classList.remove("btn__goToTop--active");
   }
 });
 
+// ------------------------------------------------------------------------------------------------ my contacts
+if (document.querySelector(".close_mycontacts")) {
+  const closeBtnMyContacts = document.querySelector(".close_mycontacts");
+  const myContactsBlock = document.querySelector(".my-contacts");
+  myContactsBlock.classList.add("_active");
+  closeBtnMyContacts.textContent = "X";
 
+  closeBtnMyContacts.addEventListener("click", () => {
+    myContactsBlock.classList.toggle("_active");
+    if (myContactsBlock.classList.contains("_active")) {
+      closeBtnMyContacts.textContent = "X";
+    } else {
+      closeBtnMyContacts.textContent = "V";
+    }
+  });
+}
