@@ -79,6 +79,33 @@
         }
       }
     </style>
+    <!-- draggable -->
+    <div class="nav-sticy" id="draggable">
+      <div class="text-close">
+        <h2>Мои контакты</h2>
+        <span>X</span>
+      </div>
+      <div class="my-contacts">
+        <a href="tel:89194423234" class="my-contacts__link">
+          <svg class="header-icon-iphone header-icon--contacts">
+            <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+          </svg>
+          <div class="header-icon--text my-icon--text">
+            <span class="my-contacts-link__caption">Позвонить мне</span>
+            <span class="my-contacts-link__value">(919) 442-3234</span>
+          </div>
+        </a>
+        <a href="mailto:And.dev59" class="my-contacts__link">
+          <svg class="header-icon-mail header-icon--contacts">
+            <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+          </svg>
+          <div class="header-icon--text my-icon--text">
+            <span class="my-contacts-link__caption">Написать мне</span>
+            <span class="my-contacts-link__value">And.dev59</span>
+          </div>
+        </a>
+      </div>
+    </div>
     <!-- header -->
     <header id="top" class="header header__main header_other">
       <div class="container header_container">
@@ -109,7 +136,8 @@
         <div class="header-contacts">
           <a
             href="tel:4055550128"
-            class="header-contacts__link contacts-link contacts-link__call">
+            class="header-contacts__link contacts-link contacts-link__call"
+          >
             <svg class="header-icon-iphone header-icon--contacts">
               <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
             </svg>
@@ -945,14 +973,19 @@
             </div>
             <div class="recent-news-article__text">
               <h2>
-                <a href="news-single-post.html" class="recent-news-article__title">
+                <a
+                  href="news-single-post.html"
+                  class="recent-news-article__title"
+                >
                   How to Build Climate Change-Resilient Infrastructure
                 </a>
               </h2>
               <div
                 class="recent-news-article__meta article-meta article-meta--big"
               >
-                <a href="news-single-post.html" class="article-meta__item">Industry News</a>
+                <a href="news-single-post.html" class="article-meta__item"
+                  >Industry News</a
+                >
                 <time class="article-meta__item" datetime="2021-06-24 19:00"
                   >June 24, 2020</time
                 >
@@ -973,14 +1006,19 @@
             </div>
             <div class="recent-news-article__text">
               <h2>
-                <a href="news-single-post.html" class="recent-news-article__title">
+                <a
+                  href="news-single-post.html"
+                  class="recent-news-article__title"
+                >
                   How Construction Can Help Itself
                 </a>
               </h2>
               <div
                 class="recent-news-article__meta article-meta article-meta--small"
               >
-                <a href="news-single-post.html" class="article-meta__item">Industry News</a>
+                <a href="news-single-post.html" class="article-meta__item"
+                  >Industry News</a
+                >
                 <time class="article-meta__item" datetime="2021-06-24 19:00"
                   >June 24, 2020</time
                 >
@@ -1003,14 +1041,18 @@
             </div>
             <div class="recent-news-article__text">
               <h2 class="recent-news-article__title">
-                <a href="news-single-post.html" class="recent-news-article__title"
+                <a
+                  href="news-single-post.html"
+                  class="recent-news-article__title"
                   >Types of Flooring Materials</a
                 >
               </h2>
               <div
                 class="recent-news-article__meta article-meta article-meta--small"
               >
-                <a href="news-single-post.html" class="article-meta__item">Industry News</a>
+                <a href="news-single-post.html" class="article-meta__item"
+                  >Industry News</a
+                >
                 <time class="article-meta__item" datetime="2021-06-24 19:00"
                   >June 24, 2020</time
                 >
@@ -1231,7 +1273,9 @@
                 <a href="about-us.html" class="footer-nav__link">About Us</a>
               </li>
               <li class="footer-nav__item">
-                <a href="available-positions.html" class="footer-nav__link">Available Positions</a>
+                <a href="available-positions.html" class="footer-nav__link"
+                  >Available Positions</a
+                >
               </li>
               <li class="footer-nav__item">
                 <a href="contacts.html" class="footer-nav__link">Contacts</a>
@@ -1285,5 +1329,6 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/video.js"></script>
     <script src="./assets/js/to-top.js"></script>
+    <script src="./assets/js/draggable.js"></script>
   </body>
 </html>
