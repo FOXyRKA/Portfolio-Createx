@@ -136,13 +136,27 @@ if (document.querySelector(".video-block")) {
 }
 
 // ------------------------------------------------------------------------------------------------ GO TO TOP
-// Показываем кнопку только когда страница прокручена вниз
 window.addEventListener("scroll", function () {
   const button = document.querySelector(".btn__goToTop");
-  if (window.pageYOffset > 1000) {
+  const scrollPosition = window.pageYOffset;
+  const texBtnGoToTop = document.querySelector(".text-btnGoToTop");
+  const documentHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const maxScroll = documentHeight - windowHeight;
+
+  // Проверяем: прокручено больше 1000px ИЛИ достигнут конец страницы
+  const isScrolledEnough = scrollPosition > 1000;
+  const isAtBottom = scrollPosition + 280 >= maxScroll;
+
+  if (isScrolledEnough) {
     button.classList.add("btn__goToTop--active");
   } else {
     button.classList.remove("btn__goToTop--active");
+  }
+  if (isAtBottom) {
+    texBtnGoToTop.style.opacity = "1";
+  } else {
+    texBtnGoToTop.style.opacity = "0";
   }
 });
 
