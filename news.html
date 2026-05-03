@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/graph-modal.css" />
   </head>
   <body>
-        <style>
+    <style>
       .mission__item:not(:last-child)::after {
         background-image: url("./assets/image/divider.svg");
       }
@@ -79,6 +79,33 @@
         }
       }
     </style>
+    <!-- draggable -->
+    <div class="nav-sticy" id="draggable">
+      <div class="text-close">
+        <h2>Мои контакты</h2>
+        <span>X</span>
+      </div>
+      <div class="my-contacts">
+        <a href="tel:89194423234" class="my-contacts__link">
+          <svg class="header-icon-iphone header-icon--contacts">
+            <use xlink:href="./assets/image/sprite.svg#ic-iPhone"></use>
+          </svg>
+          <div class="header-icon--text my-icon--text">
+            <span class="my-contacts-link__caption">Позвонить мне</span>
+            <span class="my-contacts-link__value">(919) 442-3234</span>
+          </div>
+        </a>
+        <a href="mailto:And.dev59" class="my-contacts__link">
+          <svg class="header-icon-mail header-icon--contacts">
+            <use xlink:href="./assets/image/sprite.svg#ic-chat"></use>
+          </svg>
+          <div class="header-icon--text my-icon--text">
+            <span class="my-contacts-link__caption">Написать мне</span>
+            <span class="my-contacts-link__value">And.dev59</span>
+          </div>
+        </a>
+      </div>
+    </div>
     <!-- header -->
     <header id="top" class="header header__main header_other">
       <div class="container header_container">
@@ -267,7 +294,9 @@
               />
               <div class="news-article__text">
                 <h3 class="news-article__title">
-                  <a href="news-single-post.html" class="news-article__link article__link"
+                  <a
+                    href="news-single-post.html"
+                    class="news-article__link article__link"
                     >How Construction Can Help Itself</a
                   >
                 </h3>
@@ -297,7 +326,9 @@
               />
               <div class="news-article__text">
                 <h3 class="news-article__title">
-                  <a href="news-single-post.html" class="news-article__link article__link"
+                  <a
+                    href="news-single-post.html"
+                    class="news-article__link article__link"
                     >The Difference Between a Digger and an Excavator</a
                   >
                 </h3>
@@ -327,7 +358,9 @@
               />
               <div class="news-article__text">
                 <h3 class="news-article__title">
-                  <a href="news-single-post.html" class="news-article__link article__link"
+                  <a
+                    href="news-single-post.html"
+                    class="news-article__link article__link"
                     >Building Construction Hand Tools</a
                   >
                 </h3>
@@ -357,7 +390,9 @@
               />
               <div class="news-article__text">
                 <h3 class="news-article__title">
-                  <a href="news-single-post.html" class="news-article__link article__link"
+                  <a
+                    href="news-single-post.html"
+                    class="news-article__link article__link"
                     >Top 10 Construction Trends</a
                   >
                 </h3>
@@ -387,7 +422,9 @@
               />
               <div class="news-article__text">
                 <h3 class="news-article__title">
-                  <a href="news-single-post.html" class="news-article__link article__link"
+                  <a
+                    href="news-single-post.html"
+                    class="news-article__link article__link"
                     >Types of Flooring Materials</a
                   >
                 </h3>
@@ -626,7 +663,9 @@
                 <a href="about-us.html" class="footer-nav__link">About Us</a>
               </li>
               <li class="footer-nav__item">
-                <a href="available-positions.html" class="footer-nav__link">Available Positions</a>
+                <a href="available-positions.html" class="footer-nav__link"
+                  >Available Positions</a
+                >
               </li>
               <li class="footer-nav__item">
                 <a href="contacts.html" class="footer-nav__link">Contacts</a>
